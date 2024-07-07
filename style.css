@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(242, 225, 194);
+    color: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/***************/
+/* common css  */
+/***************/
+
+section {
+    min-height: calc(100vh - 30px);
+}
+
+section:first-of-type{
+    padding-top: 30px;
+}
+
+.hiden{
+    display: none;
+}
+
+/************/
+/* Nav css  */
+/************/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-color: inherit;
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-right:10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+}
+/**************/
+/* intro css  */
+/**************/
+
+#intro{
+ display: flex;
+}
+
+.me{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.me .socal-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me .socal-media div img {
+    padding: 5px;
+}
+
+.me>div {
+    text-align: center;
+}
+
+.about-me{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+  flex-direction: column;
+  text-align: center;
+    background-color: red;
+}
+
+@media (max-width:600px) {
+    #intro{
+        display: block;
+    }
+
+    .me{
+        width: 100%;
+    }
+    
+    .about-me{
+        width: 100%;
+    }
+}
